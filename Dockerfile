@@ -1,4 +1,4 @@
-FROM openjdk:17-slim
+FROM azul-zulu:17-jre
 
 WORKDIR /app
 
