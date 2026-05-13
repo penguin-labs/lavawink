@@ -1,6 +1,11 @@
 server:
   port: ${PORT:2333}
   address: 0.0.0.0
+  http:
+    health:
+      path: /health
+      enabled: true
+
 lavalink:
   server:
     password: "youshallnotpass"
@@ -13,6 +18,7 @@ lavalink:
       http: true
       local: false
     bufferDurationMs: 400
+    frameBufferDurationMs: 5000
     youtubePlaylistLoadLimit: 6
     playerUpdateInterval: 5
     youtubeSearchEnabled: true
